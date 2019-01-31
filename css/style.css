@@ -1,0 +1,294 @@
+html, body{
+    height: 100%;
+}
+
+.item{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+#pic1{
+    height: 400px;
+    width: 500px;
+    border: 5px solid black;
+}
+
+#pic2{
+    height: 400px;
+    width: 1100px;
+    border: 5px solid black;
+}
+
+#pic3{
+    height: 500px;
+    width: 500px;
+    border: 5px solid black;
+}
+
+#pic4{
+    height: 600px;
+    width: 500px;
+    border: 5px solid black;
+}
+
+#pic5{
+    height: 600px;
+    width: 500px;
+    border: 5px solid black;
+}
+
+#pic6{
+    height: 700px;
+    width: 1099px;
+    border: 5px solid black;
+}
+
+#pic7{
+    height: 600px;
+    width: 500px;
+    border: 5px solid black;
+}
+
+#pic8{
+    height: 400px;
+    width: 500px;
+    border: 5px solid black;
+}
+
+#pic9{
+    height: 500px;
+    width: 500px;
+    border: 5px solid black;
+}
+
+#pic10{
+    height: 800px;
+    width: 1100px;
+    border: 5px solid black;
+}
+
+#pic11{
+    height: 400px;
+    width: 500px;
+    border: 5px solid black;
+}
+
+#pic12{
+    height: 800px;
+    width: 1100px;
+    border: 5px solid black;
+}
+
+#pic13{
+    height: 400px;
+    width: 500px;
+    border: 5px solid black;
+}
+
+#pic14{
+    height: 400px;
+    width: 1100px;
+    border: 5px solid black;
+}
+
+#pic15{
+    height: 400px;
+    width: 500px;
+    border: 5px solid black;
+}
+
+#pic16{
+    height: 500px;
+    width: 1100px;
+    border: 5px solid black;
+}
+
+#pic17{
+    height: 200px;
+    width: 500px;
+    border: 5px solid black;
+}
+
+#homepic1{
+    width: 400px;
+    height: 300px;
+    border: 3px dashed black;
+}
+
+#homepic2{
+    width: 400px;
+    height: 300px;
+    border: 3px dashed black;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr,1fr;
+    grid-auto-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr,1fr,1fr,1fr;
+    grid-gap: 60px;
+    height: 100%;
+    grid-auto-flow: dense;
+    float: left;
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+.header1{
+    height: 250px;
+    width: 100%;
+    background-color: darkturquoise;
+    color: white;
+    font-family: sans-serif;
+    font-size: 50px;
+    line-height: 250px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.header2{
+    height: 250px;
+    width: 100%;
+    background-color: darkturquoise;
+    color: white;
+    font-family: sans-serif;
+    font-size: 50px;
+    line-height: 250px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.navigation1 {
+    background-color: black;
+    color: white;
+    height: 600px;
+    width: 15%;
+    font-size: 30px;
+    float: left;
+    font-family: sans-serif;
+    border: 2px solid black;
+}
+
+.navigation2 {
+    background-color: black;
+    color: white;
+    height: 8600px;
+    width: 15%;
+    font-size: 30px;
+    float: left;
+    font-family: sans-serif;
+    border: 2px solid black;
+}
+
+#title{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.sectionA{
+    width: 84.4%;
+    height: 600px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    border: 2px solid black;
+    float: right;
+}
+
+.footer1{
+    width: 100%;
+    height: 100px;
+    background-color: darkturquoise;
+    float: left;
+    line-height: 100px;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.footer2{
+    width: 100%;
+    height: 100px;
+    background-color: darkturquoise;
+    float: left;
+    line-height: 100px;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.figure{
+    object-fit: fill;
+}
+
+div{
+    position: relative;
+}
+
+.title{
+    position: absolute;
+    top: 0;
+    background-color: rgba(255,255,255,0.5)
+}
+
+@media (min-width:1000px){
+    .item:nth-child(2n){
+        grid-column: span 2;
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .header1, .header2, .navigation1, .navigation2 {font-size: 11px}
+}
+
+@media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+    [class*="header1"] {
+        width: 100%;
+    }
+    
+    [class*="header2"] {
+        width: 100%;
+    }
+    
+    [class*="navigation1"] {
+        width: 100%;
+    }
+    
+    [class*="navigation2"] {
+        width: 100%;
+    }
+    
+    [class*="footer1"] {
+        width: 100%;
+    }
+    
+    [class*="footer2"] {
+        width: 100%;
+    }
+    
+    [class*="sectionA"] {
+        width: 100%;
+    }
+    
+    [class*="container2"] {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-height: 600px) {
+    /* For mobile phones: */   
+    [class*="navigation1"] {
+        height: 20%;
+    }
+    
+    [class*="navigation2"] {
+        height: 20%;
+    }
+
+}
